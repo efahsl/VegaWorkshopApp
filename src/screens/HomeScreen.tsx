@@ -7,8 +7,8 @@ import {
   ActivityIndicator,
   Pressable,
   ScrollView,
-  FlatList,
 } from 'react-native';
+import {Carousel, ItemInfo} from '@amazon-devices/kepler-ui-components';
 import type {NativeStackNavigationProp} from '@amazon-devices/react-native-screens/native-stack';
 import type {RootStackParamList} from '../App';
 
@@ -40,26 +40,54 @@ interface CatalogData {
 interface ThumbnailItemProps {
   item: MovieItem;
   onPress: () => void;
-  onFocus: () => void;
 }
 
-const ThumbnailItem = ({item, onPress, onFocus}: ThumbnailItemProps) => {
+const SHADOW_LAYERS = 12;
+
+const ThumbnailItem = ({item, onPress}: ThumbnailItemProps) => {
   const [focused, setFocused] = useState(false);
+
+  const shadowLayers = Array(SHADOW_LAYERS)
+    .fill(null)
+    .map((_, i) => ({
+      id: `shadow-${i}`,
+      offset: i * 2,
+      radius: 6 + i * 3,
+      opacity: 0.12 + i * 0.025,
+    }));
 
   return (
     <Pressable
       style={[styles.thumbnail, focused && styles.thumbnailFocused]}
-      onFocus={() => {
-        setFocused(true);
-        onFocus();
-      }}
+      onFocus={() => setFocused(true)}
       onBlur={() => setFocused(false)}
       onPress={onPress}>
+      {shadowLayers.map((layer) => (
+        <View
+          key={layer.id}
+          style={[
+            styles.shadowBox,
+            {
+              top: layer.offset,
+              left: layer.offset,
+              shadowRadius: layer.radius,
+              shadowOpacity: layer.opacity,
+            },
+          ]}>
+          <View style={styles.innerShadow} />
+        </View>
+      ))}
+
+      {/* Main thumbnail image */}
       <Image
         source={{uri: item.images.thumbnail_450x253}}
         style={styles.thumbnailImage}
         resizeMode="cover"
       />
+
+      <View style={styles.overlay1} />
+      <View style={styles.overlay2} />
+      <View style={styles.overlay3} />
     </Pressable>
   );
 };
@@ -68,34 +96,50 @@ interface ContentRowProps {
   title: string;
   items: MovieItem[];
   onItemPress: (item: MovieItem) => void;
-  onItemFocus: (item: MovieItem) => void;
 }
 
-const ContentRow = ({title, items, onItemPress, onItemFocus}: ContentRowProps) => {
+const ContentRow = ({title, items, onItemPress}: ContentRowProps) => {
   const renderItem = ({item}: {item: MovieItem}) => {
+    const clonedItem = JSON.parse(JSON.stringify(item));
     return (
-      <ThumbnailItem
-        item={item}
-        onPress={() => onItemPress(item)}
-        onFocus={() => onItemFocus(item)}
-      />
+      <ThumbnailItem item={clonedItem} onPress={() => onItemPress(item)} />
     );
   };
 
+  const itemInfo: ItemInfo[] = [
+    {
+      view: ThumbnailItem,
+      dimension: {
+        width: 415,
+        height: 235,
+      },
+    },
+  ];
+
+  const rowStyle = {marginBottom: 40};
+  const titleStyle = {
+    fontSize: 48,
+    color: '#FFFFFF',
+    fontWeight: 'bold' as const,
+    marginBottom: 20,
+    paddingLeft: 60,
+  };
+
   return (
-    <View style={styles.rowContainer}>
-      <Text style={styles.rowTitle}>{title}</Text>
-      <FlatList
+    <View style={rowStyle}>
+      <Text style={titleStyle}>{title}</Text>
+      <Carousel
         data={items}
-        horizontal
+        orientation="horizontal"
+        itemDimensions={itemInfo}
         renderItem={renderItem}
-        keyExtractor={(item, index) => `${index}-${item.id}`}
-        showsHorizontalScrollIndicator={false}
+        getItemForIndex={() => ThumbnailItem}
+        keyProvider={(item, index) => `${index}-${item.id}`}
+        focusIndicatorType="fixed"
       />
     </View>
   );
 };
-
 interface HomeScreenProps {
   navigation: HomeScreenNavigationProp;
 }
@@ -103,7 +147,6 @@ interface HomeScreenProps {
 export const HomeScreen = ({navigation}: HomeScreenProps) => {
   const [movies, setMovies] = useState<MovieItem[]>([]);
   const [loading, setLoading] = useState(true);
-  const [backgroundImage, setBackgroundImage] = useState<string>('');
 
   useEffect(() => {
     fetchMovies();
@@ -132,10 +175,6 @@ export const HomeScreen = ({navigation}: HomeScreenProps) => {
     });
   };
 
-  const handleItemFocus = (item: MovieItem) => {
-    // setBackgroundImage(item.images.poster_16x9);
-    setBackgroundImage(item.images.thumbnail_450x253);    
-  };
 
   // Group movies by category
   const groupMoviesByCategory = () => {
@@ -169,43 +208,26 @@ export const HomeScreen = ({navigation}: HomeScreenProps) => {
   const categories = Object.keys(moviesByCategory);
 
   return (
-    <View style={styles.container}>
-      {/* Background Image */}
-      {backgroundImage ? (
-        <Image
-          source={{uri: backgroundImage}}
-          style={styles.backgroundImage}
-          resizeMode="cover"
+    <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
+      {/* Trending Now Row */}
+      {trendingMovies.length > 0 && (
+        <ContentRow
+          title="Trending Now"
+          items={trendingMovies}
+          onItemPress={handleItemPress}
         />
-      ) : null}
+      )}
 
-      {/* Dark Overlay */}
-      <View style={styles.overlay} />
-
-      {/* Content */}
-      <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
-        {/* Trending Now Row */}
-        {trendingMovies.length > 0 && (
-          <ContentRow
-            title="Trending Now"
-            items={trendingMovies}
-            onItemPress={handleItemPress}
-            onItemFocus={handleItemFocus}
-          />
-        )}
-
-        {/* Category Rows */}
-        {categories.map((category) => (
-          <ContentRow
-            key={category}
-            title={category}
-            items={moviesByCategory[category]}
-            onItemPress={handleItemPress}
-            onItemFocus={handleItemFocus}
-          />
-        ))}
-      </ScrollView>
-    </View>
+      {/* Category Rows */}
+      {categories.map((category) => (
+        <ContentRow
+          key={category}
+          title={category}
+          items={moviesByCategory[category]}
+          onItemPress={handleItemPress}
+        />
+      ))}
+    </ScrollView>
   );
 };
 
@@ -213,26 +235,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#1a1a1a',
-  },
-  backgroundImage: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    width: '100%',
-    height: '100%',
-  },
-  overlay: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    backgroundColor: 'rgba(0, 0, 0, 0.7)',
-  },
-  content: {
-    flex: 1,
     paddingTop: 60,
   },
   loadingContainer: {
@@ -263,6 +265,57 @@ const styles = StyleSheet.create({
   },
   thumbnailImage: {
     width: 400,
-    height: 225, // 16:9 aspect ratio (400/16*9 = 225)
+    height: 225,
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    zIndex: 100,
+  },
+  shadowBox: {
+    position: 'absolute',
+    width: 380,
+    height: 210,
+    backgroundColor: 'rgba(0,0,0,0.08)',
+    shadowColor: '#000000',
+    shadowOffset: {width: 6, height: 6},
+    elevation: 12,
+  },
+
+  innerShadow: {
+    flex: 1,
+    margin: 4,
+    backgroundColor: 'rgba(50,50,50,0.06)',
+    shadowColor: '#333333',
+    shadowOffset: {width: 3, height: 3},
+    shadowOpacity: 0.3,
+    shadowRadius: 8,
+    elevation: 8,
+  },
+  overlay1: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: 400,
+    height: 225,
+    backgroundColor: 'rgba(255,255,255,0.03)',
+    borderRadius: 8,
+  },
+  overlay2: {
+    position: 'absolute',
+    top: 4,
+    left: 4,
+    width: 392,
+    height: 217,
+    backgroundColor: 'rgba(0,0,0,0.03)',
+    borderRadius: 6,
+  },
+  overlay3: {
+    position: 'absolute',
+    top: 8,
+    left: 8,
+    width: 384,
+    height: 209,
+    backgroundColor: 'rgba(128,128,128,0.03)',
+    borderRadius: 4,
   },
 });

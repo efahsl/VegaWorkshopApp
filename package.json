@@ -19,6 +19,7 @@
     "release": "npm-run-all lint test build:app"
   },
   "dependencies": {
+    "@amazon-devices/kepler-ui-components": "^2.0.0",
     "@amazon-devices/react-native-kepler": "^2.0.0",
     "@amazon-devices/react-native-screens": "~2.0.0",
     "@amazon-devices/react-native-w3cmedia": "~2.1.80",
