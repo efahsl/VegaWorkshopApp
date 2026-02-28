@@ -182,6 +182,13 @@ export const HomeScreen = ({navigation}: HomeScreenProps) => {
       {/* Dark Overlay */}
       <View style={styles.overlay} />
 
+      {/* Advanced Features Button */}
+      <Pressable
+        style={styles.advancedButton}
+        onPress={() => navigation.navigate('AdvancedFeatures')}>
+        <Text style={styles.advancedButtonText}>⚡ Advanced Features</Text>
+      </Pressable>
+
       {/* Content */}
       <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
         {/* Trending Now Row */}
@@ -264,5 +271,20 @@ const styles = StyleSheet.create({
   thumbnailImage: {
     width: 400,
     height: 225, // 16:9 aspect ratio (400/16*9 = 225)
+  },
+  advancedButton: {
+    position: 'absolute',
+    top: 60,
+    left: 60,
+    backgroundColor: '#E50914',
+    paddingHorizontal: 24,
+    paddingVertical: 12,
+    borderRadius: 8,
+    zIndex: 1000,
+  },
+  advancedButtonText: {
+    color: '#FFFFFF',
+    fontSize: 20,
+    fontWeight: 'bold',
   },
 });

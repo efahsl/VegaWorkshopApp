@@ -14,6 +14,7 @@ import {NavigationContainer} from '@amazon-devices/react-navigation__native';
 import {HomeScreen} from './screens/HomeScreen';
 import {DetailsScreen} from './screens/DetailsScreen';
 import {VideoPlayerScreen} from './screens/VideoPlayerScreen';
+import {AdvancedFeaturesScreen} from './screens/AdvancedFeaturesScreen';
 
 // Enable optimizations
 enableScreens();
@@ -33,6 +34,7 @@ export type RootStackParamList = {
     title: string;
   };
   BlitsDemo: undefined;
+  AdvancedFeatures: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -48,6 +50,7 @@ export const App = () => {
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Detail" component={DetailsScreen} />
         <Stack.Screen name="VideoPlayer" component={VideoPlayerScreen} />
+        <Stack.Screen name="AdvancedFeatures" component={AdvancedFeaturesScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
