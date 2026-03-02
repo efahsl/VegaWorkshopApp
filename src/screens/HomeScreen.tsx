@@ -184,7 +184,11 @@ export const HomeScreen = ({navigation}: HomeScreenProps) => {
 
       {/* Advanced Features Button */}
       <Pressable
-        style={styles.advancedButton}
+        style={({focused}) => [
+          styles.advancedButton,
+          focused && styles.advancedButtonFocused,
+        ]}
+        focusable={true}
         onPress={() => navigation.navigate('AdvancedFeatures')}>
         <Text style={styles.advancedButtonText}>⚡ Advanced Features</Text>
       </Pressable>
@@ -281,6 +285,11 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
     borderRadius: 8,
     zIndex: 1000,
+  },
+  advancedButtonFocused: {
+    borderWidth: 4,
+    borderColor: '#FFFFFF',
+    transform: [{scale: 1.1}],
   },
   advancedButtonText: {
     color: '#FFFFFF',
