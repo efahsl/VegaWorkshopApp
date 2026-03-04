@@ -1,0 +1,109 @@
+{
+   "cpuRecords": [
+      {
+         "hotFunctions": [
+            {
+               "function_name": "_reactNative",
+               "file_path": "/Volumes/workplace/VegaDeveloperWorkshop/reference/VegaWorkshopApp/src/screens/HomeScreen.tsx",
+               "line_number": 82,
+               "column_number": 7,
+               "begin_timestamp": 1772574330454765000,
+               "end_timestamp": 1772574397710135000,
+               "duration": 338919000,
+               "percent_of_total": 0.48
+            },
+            {
+               "function_name": "",
+               "file_path": "/Volumes/workplace/VegaDeveloperWorkshop/reference/VegaWorkshopApp/src/screens/HomeScreen.tsx",
+               "line_number": 65,
+               "column_number": 24,
+               "begin_timestamp": 1772574333660917000,
+               "end_timestamp": 1772574397695673000,
+               "duration": 203562000,
+               "percent_of_total": 0.29
+            },
+            {
+               "function_name": "_reactNative",
+               "file_path": "/Volumes/workplace/VegaDeveloperWorkshop/reference/VegaWorkshopApp/src/screens/HomeScreen.tsx",
+               "line_number": 66,
+               "column_number": 9,
+               "begin_timestamp": 1772574333660917000,
+               "end_timestamp": 1772574397695673000,
+               "duration": 139586000,
+               "percent_of_total": 0.2
+            },
+            {
+               "function_name": "_reactNative",
+               "file_path": "/Volumes/workplace/VegaDeveloperWorkshop/reference/VegaWorkshopApp/src/screens/HomeScreen.tsx",
+               "line_number": 77,
+               "column_number": 11,
+               "begin_timestamp": 1772574351818185000,
+               "end_timestamp": 1772574359087983000,
+               "duration": 28454000,
+               "percent_of_total": 0.04
+            },
+            {
+               "function_name": "Pressable",
+               "file_path": "/Volumes/workplace/VegaDeveloperWorkshop/reference/VegaWorkshopApp/src/screens/HomeScreen.tsx",
+               "line_number": 60,
+               "column_number": 5,
+               "begin_timestamp": 1772574375373411000,
+               "end_timestamp": 1772574375393312000,
+               "duration": 19901000,
+               "percent_of_total": 0.03
+            },
+            {
+               "function_name": "_reactNative",
+               "file_path": "/Volumes/workplace/VegaDeveloperWorkshop/reference/VegaWorkshopApp/src/screens/HomeScreen.tsx",
+               "line_number": 89,
+               "column_number": 7,
+               "begin_timestamp": 1772574333669133000,
+               "end_timestamp": 1772574333688303000,
+               "duration": 19170000,
+               "percent_of_total": 0.03
+            },
+            {
+               "function_name": "_reactNative",
+               "file_path": "/Volumes/workplace/VegaDeveloperWorkshop/reference/VegaWorkshopApp/src/screens/HomeScreen.tsx",
+               "line_number": 90,
+               "column_number": 7,
+               "begin_timestamp": 1772574342436275000,
+               "end_timestamp": 1772574342452438000,
+               "duration": 16163000,
+               "percent_of_total": 0.02
+            },
+            {
+               "function_name": "",
+               "file_path": "/Volumes/workplace/VegaDeveloperWorkshop/reference/VegaWorkshopApp/src/screens/HomeScreen.tsx",
+               "line_number": 51,
+               "column_number": 10,
+               "begin_timestamp": 1772574348382175000,
+               "end_timestamp": 1772574348391532000,
+               "duration": 9357000,
+               "percent_of_total": 0.01
+            },
+            {
+               "function_name": "",
+               "file_path": "/Volumes/workplace/VegaDeveloperWorkshop/reference/VegaWorkshopApp/src/screens/HomeScreen.tsx",
+               "line_number": 63,
+               "column_number": 31,
+               "begin_timestamp": 1772574357342167000,
+               "end_timestamp": 1772574357350347000,
+               "duration": 8180000,
+               "percent_of_total": 0.01
+            },
+            {
+               "function_name": "",
+               "file_path": null,
+               "line_number": null,
+               "column_number": null,
+               "begin_timestamp": 1772574391154964000,
+               "end_timestamp": 1772574391160246000,
+               "duration": 5282000,
+               "percent_of_total": 0.01
+            }
+         ],
+         "traceEventsFilePath": "/Volumes/workplace/VegaDeveloperWorkshop/reference/VegaWorkshopApp/output/2026-03-03_13-41-48/iter_3_trace1772574401120847602-converted.json"
+      }
+   ]
+}
