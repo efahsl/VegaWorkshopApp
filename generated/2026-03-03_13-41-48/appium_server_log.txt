@@ -1,0 +1,2158 @@
+dbug Appium Parsed manifest file at /Users/snehall/.appium/node_modules/.cache/appium/extensions.yaml: {
+dbug Appium   "drivers": {
+dbug Appium     "kepler": {
+dbug Appium       "pkgName": "@amazon-devices/appium-kepler-driver",
+dbug Appium       "version": "3.30.0",
+dbug Appium       "installType": "npm",
+dbug Appium       "installSpec": "@amazon-devices/appium-kepler-driver@3.30.0",
+dbug Appium       "installPath": "/Users/snehall/.appium/node_modules/@amazon-devices/appium-kepler-driver",
+dbug Appium       "appiumVersion": "^2.2.2",
+dbug Appium       "automationName": "automation-toolkit/JSON-RPC",
+dbug Appium       "platformNames": [
+dbug Appium         "Kepler"
+dbug Appium       ],
+dbug Appium       "mainClass": "KeplerDriver"
+dbug Appium     }
+dbug Appium   },
+dbug Appium   "plugins": {},
+dbug Appium   "schemaRev": 4
+dbug Appium }
+info Appium Welcome to Appium v2.2.2 (REV 6e88ffd4d26b5074cdbcad13f7dcff4222e8677f)
+info Appium Non-default server args:
+info Appium { port: [33m38000[39m }
+info Appium Attempting to load driver kepler...
+dbug Appium Requiring driver at /Users/snehall/.appium/node_modules/@amazon-devices/appium-kepler-driver
+info Appium Appium REST http interface listener started on http://0.0.0.0:38000
+info Appium You can provide the following URLs in your client code to connect to this server:
+info Appium 	http://127.0.0.1:38000/ (only accessible from the same host)
+info Appium 	http://172.24.1.111:38000/
+info Appium 	http://11.114.31.103:38000/
+info Appium Available drivers:
+info Appium   - kepler@3.30.0 (automationName 'automation-toolkit/JSON-RPC')
+info Appium No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+[38;5;0m[HTTP][0m Request idempotency key: 4d9db353-10bf-418f-bfe8-a028a5df826e
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session[39m [90m{"capabilities":{"firstMatch":[{}],"alwaysMatch":{"platformName":"Kepler","appium:automationName":"automation-toolkit/JSON-RPC","browserName":"","kepler:device":"vda://G4N33M02338200B5","kepler:jsonRPCPort":8383,"appium:newCommandTimeout":500,"appium:deviceName":"G4N33M02338200B5"}}}[39m
+[38;5;16m[AppiumDriver@8c2f][0m Calling AppiumDriver.createSession() with args: [null,null,{"firstMatch":[{}],"alwaysMatch":{"platformName":"Kepler","appium:automationName":"automation-toolkit/JSON-RPC","browserName":"","kepler:device":"vda://G4N33M02338200B5","kepler:jsonRPCPort":8383,"appium:newCommandTimeout":500,"appium:deviceName":"G4N33M02338200B5"}}]
+[38;5;16m[AppiumDriver@8c2f][0m Event 'newSessionRequested' logged at 1772574316326 (13:45:16 GMT-0800 (Pacific Standard Time))
+info Appium Attempting to find matching driver for automationName 'automation-toolkit/JSON-RPC' and platformName 'Kepler'
+info Appium The 'kepler' driver was installed and matched caps.
+info Appium Will require it at /Users/snehall/.appium/node_modules/@amazon-devices/appium-kepler-driver
+dbug Appium Requiring driver at /Users/snehall/.appium/node_modules/@amazon-devices/appium-kepler-driver
+[38;5;16m[AppiumDriver@8c2f][0m Appium v2.2.2 creating new KeplerDriver (v3.30.0) session
+[38;5;16m[AppiumDriver@8c2f][0m Checking BaseDriver versions for Appium and KeplerDriver
+[38;5;16m[AppiumDriver@8c2f][0m Appium's BaseDriver version is 9.18.0
+[38;5;16m[AppiumDriver@8c2f][0m KeplerDriver's BaseDriver version is 8.2.4
+w3cCapabilities from caller: {
+  alwaysMatch: {
+    platformName: 'Kepler',
+    browserName: '',
+    'kepler:device': 'vda://G4N33M02338200B5',
+    'kepler:jsonRPCPort': 8383,
+    'appium:automationName': 'automation-toolkit/JSON-RPC',
+    'appium:newCommandTimeout': 500,
+    'appium:deviceName': 'G4N33M02338200B5'
+  },
+  firstMatch: [ {}, [length]: 1 ]
+}
+[38;5;32m[BaseDriver][0m Creating session with W3C capabilities: {
+[38;5;32m[BaseDriver][0m   "alwaysMatch": {
+[38;5;32m[BaseDriver][0m     "platformName": "Kepler",
+[38;5;32m[BaseDriver][0m     "browserName": "",
+[38;5;32m[BaseDriver][0m     "kepler:device": "vda://G4N33M02338200B5",
+[38;5;32m[BaseDriver][0m     "kepler:jsonRPCPort": 8383,
+[38;5;32m[BaseDriver][0m     "appium:automationName": "automation-toolkit/JSON-RPC",
+[38;5;32m[BaseDriver][0m     "appium:newCommandTimeout": 500,
+[38;5;32m[BaseDriver][0m     "appium:deviceName": "G4N33M02338200B5"
+[38;5;32m[BaseDriver][0m   },
+[38;5;32m[BaseDriver][0m   "firstMatch": [
+[38;5;32m[BaseDriver][0m     {}
+[38;5;32m[BaseDriver][0m   ]
+[38;5;32m[BaseDriver][0m }
+[38;5;32m[BaseDriver][0m The following capabilities were provided, but are not recognized by Appium:
+[38;5;32m[BaseDriver][0m   browserName
+[38;5;32m[BaseDriver][0m   kepler:jsonRPCPort
+[38;5;32m[BaseDriver][0m Session created with session id: 9011fdc3-111d-4fe9-9abc-eff0a47d19f9
+Creating session with w3cCapabilities: {
+  platformName: 'Kepler',
+  browserName: '',
+  'kepler:device': 'vda://G4N33M02338200B5',
+  'kepler:jsonRPCPort': 8383,
+  automationName: 'automation-toolkit/JSON-RPC',
+  newCommandTimeout: 500,
+  deviceName: 'G4N33M02338200B5'
+}
+Running childProcessExec( vda -s G4N33M02338200B5 shell 'vdcm get com.amazon.devconf/system/device-info/profile' on test host...
+childProcessExec STDOUT:  'com.amazon.devconf/system/device-info/profile' = 'tv'
+
+childProcessExec succeeded after 146ms
+Successfully activated app undefined
+Running childProcessExec( vda -s G4N33M02338200B5 forward tcp:15469 tcp:8383 on test host...
+childProcessExec STDOUT:  15469
+
+childProcessExec succeeded after 109ms
+[38;5;16m[AppiumDriver@8c2f][0m New KeplerDriver session created successfully, session 9011fdc3-111d-4fe9-9abc-eff0a47d19f9 added to master session list
+[38;5;16m[AppiumDriver@8c2f][0m Event 'newSessionStarted' logged at 1772574316750 (13:45:16 GMT-0800 (Pacific Standard Time))
+[38;5;48m[KeplerDriver@9e73][0m Cached the protocol value 'W3C' for the new session 9011fdc3-111d-4fe9-9abc-eff0a47d19f9
+[38;5;48m[KeplerDriver@9e73][0m Responding to client with driver.createSession() result: {"capabilities":{"platformName":"Kepler","browserName":"","kepler:device":"vda://G4N33M02338200B5","kepler:jsonRPCPort":8383,"automationName":"automation-toolkit/JSON-RPC","newCommandTimeout":500,"deviceName":"G4N33M02338200B5"}}
+[38;5;0m[HTTP][0m [37m<-- POST /session [39m[32m200[39m [90m427 ms - 290[39m [90m[39m
+[38;5;0m[HTTP][0m Request idempotency key: 903d75be-d38e-4b43-b502-c5f47b275b1d
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session[39m [90m{"capabilities":{"firstMatch":[{}],"alwaysMatch":{"platformName":"Kepler","appium:automationName":"automation-toolkit/JSON-RPC","kepler:device":"vda://G4N33M02338200B5","kepler:jsonRPCPort":8383,"appium:newCommandTimeout":500,"appium:deviceName":"G4N33M02338200B5"}}}[39m
+[38;5;16m[AppiumDriver@8c2f][0m Calling AppiumDriver.createSession() with args: [null,null,{"firstMatch":[{}],"alwaysMatch":{"platformName":"Kepler","appium:automationName":"automation-toolkit/JSON-RPC","kepler:device":"vda://G4N33M02338200B5","kepler:jsonRPCPort":8383,"appium:newCommandTimeout":500,"appium:deviceName":"G4N33M02338200B5"}}]
+[38;5;16m[AppiumDriver@8c2f][0m Event 'newSessionRequested' logged at 1772574316757 (13:45:16 GMT-0800 (Pacific Standard Time))
+info Appium Attempting to find matching driver for automationName 'automation-toolkit/JSON-RPC' and platformName 'Kepler'
+info Appium The 'kepler' driver was installed and matched caps.
+info Appium Will require it at /Users/snehall/.appium/node_modules/@amazon-devices/appium-kepler-driver
+dbug Appium Requiring driver at /Users/snehall/.appium/node_modules/@amazon-devices/appium-kepler-driver
+[38;5;16m[AppiumDriver@8c2f][0m Appium v2.2.2 creating new KeplerDriver (v3.30.0) session
+[38;5;16m[AppiumDriver@8c2f][0m Checking BaseDriver versions for Appium and KeplerDriver
+[38;5;16m[AppiumDriver@8c2f][0m Appium's BaseDriver version is 9.18.0
+[38;5;16m[AppiumDriver@8c2f][0m KeplerDriver's BaseDriver version is 8.2.4
+w3cCapabilities from caller: {
+  alwaysMatch: {
+    platformName: 'Kepler',
+    'kepler:device': 'vda://G4N33M02338200B5',
+    'kepler:jsonRPCPort': 8383,
+    'appium:automationName': 'automation-toolkit/JSON-RPC',
+    'appium:newCommandTimeout': 500,
+    'appium:deviceName': 'G4N33M02338200B5'
+  },
+  firstMatch: [ {}, [length]: 1 ]
+}
+[38;5;32m[BaseDriver][0m Creating session with W3C capabilities: {
+[38;5;32m[BaseDriver][0m   "alwaysMatch": {
+[38;5;32m[BaseDriver][0m     "platformName": "Kepler",
+[38;5;32m[BaseDriver][0m     "kepler:device": "vda://G4N33M02338200B5",
+[38;5;32m[BaseDriver][0m     "kepler:jsonRPCPort": 8383,
+[38;5;32m[BaseDriver][0m     "appium:automationName": "automation-toolkit/JSON-RPC",
+[38;5;32m[BaseDriver][0m     "appium:newCommandTimeout": 500,
+[38;5;32m[BaseDriver][0m     "appium:deviceName": "G4N33M02338200B5"
+[38;5;32m[BaseDriver][0m   },
+[38;5;32m[BaseDriver][0m   "firstMatch": [
+[38;5;32m[BaseDriver][0m     {}
+[38;5;32m[BaseDriver][0m   ]
+[38;5;32m[BaseDriver][0m }
+[38;5;32m[BaseDriver][0m The following capabilities were provided, but are not recognized by Appium:
+[38;5;32m[BaseDriver][0m   kepler:jsonRPCPort
+[38;5;32m[BaseDriver][0m Session created with session id: cb2ffa80-af86-4371-b70a-28327f45d13b
+Creating session with w3cCapabilities: {
+  platformName: 'Kepler',
+  'kepler:device': 'vda://G4N33M02338200B5',
+  'kepler:jsonRPCPort': 8383,
+  automationName: 'automation-toolkit/JSON-RPC',
+  newCommandTimeout: 500,
+  deviceName: 'G4N33M02338200B5'
+}
+Running childProcessExec( vda -s G4N33M02338200B5 shell 'vdcm get com.amazon.devconf/system/device-info/profile' on test host...
+childProcessExec STDOUT:  'com.amazon.devconf/system/device-info/profile' = 'tv'
+
+childProcessExec succeeded after 148ms
+Successfully activated app undefined
+Running childProcessExec( vda -s G4N33M02338200B5 forward tcp:15575 tcp:8383 on test host...
+childProcessExec STDOUT:  15575
+
+childProcessExec succeeded after 92ms
+[38;5;16m[AppiumDriver@8c2f][0m New KeplerDriver session created successfully, session cb2ffa80-af86-4371-b70a-28327f45d13b added to master session list
+[38;5;16m[AppiumDriver@8c2f][0m Event 'newSessionStarted' logged at 1772574317124 (13:45:17 GMT-0800 (Pacific Standard Time))
+[38;5;48m[KeplerDriver@d9ab][0m Cached the protocol value 'W3C' for the new session cb2ffa80-af86-4371-b70a-28327f45d13b
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.createSession() result: {"capabilities":{"platformName":"Kepler","kepler:device":"vda://G4N33M02338200B5","kepler:jsonRPCPort":8383,"automationName":"automation-toolkit/JSON-RPC","newCommandTimeout":500,"deviceName":"G4N33M02338200B5"}}
+[38;5;0m[HTTP][0m [37m<-- POST /session [39m[32m200[39m [90m368 ms - 273[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"108","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"108","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"108","holdDuration":0}
+received jsonrpc response in 22ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m25 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"108","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"108","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"108","holdDuration":0}
+received jsonrpc response in 8ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m12 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"108","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"108","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"108","holdDuration":0}
+received jsonrpc response in 11ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m14 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"108","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"108","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"108","holdDuration":0}
+received jsonrpc response in 8ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m13 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"108","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"108","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"108","holdDuration":0}
+received jsonrpc response in 6ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m8 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"103","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"103","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"103","holdDuration":0}
+received jsonrpc response in 7ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m8 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"103","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"103","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"103","holdDuration":0}
+received jsonrpc response in 10ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m13 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"103","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"103","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"103","holdDuration":0}
+received jsonrpc response in 10ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m13 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"103","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"103","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"103","holdDuration":0}
+received jsonrpc response in 9ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m11 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"103","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"103","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"103","holdDuration":0}
+received jsonrpc response in 8ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m9 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"106","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"106","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"106","holdDuration":0}
+received jsonrpc response in 7ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m8 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"106","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"106","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"106","holdDuration":0}
+received jsonrpc response in 8ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m10 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"106","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"106","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"106","holdDuration":0}
+received jsonrpc response in 7ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m8 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"106","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"106","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"106","holdDuration":0}
+received jsonrpc response in 10ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m12 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"106","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"106","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"106","holdDuration":0}
+received jsonrpc response in 8ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m10 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"105","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"105","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"105","holdDuration":0}
+received jsonrpc response in 8ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m9 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"105","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"105","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"105","holdDuration":0}
+received jsonrpc response in 11ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m13 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"105","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"105","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"105","holdDuration":0}
+received jsonrpc response in 8ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m9 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"105","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"105","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"105","holdDuration":0}
+received jsonrpc response in 12ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m14 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"105","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"105","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"105","holdDuration":0}
+received jsonrpc response in 11ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m13 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"108","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"108","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"108","holdDuration":0}
+received jsonrpc response in 18ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m19 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"108","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"108","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"108","holdDuration":0}
+received jsonrpc response in 11ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m12 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"108","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"108","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"108","holdDuration":0}
+received jsonrpc response in 8ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m10 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"108","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"108","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"108","holdDuration":0}
+received jsonrpc response in 6ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m9 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"108","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"108","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"108","holdDuration":0}
+received jsonrpc response in 10ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m11 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"103","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"103","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"103","holdDuration":0}
+received jsonrpc response in 8ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m11 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"103","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"103","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"103","holdDuration":0}
+received jsonrpc response in 7ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m9 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"103","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"103","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"103","holdDuration":0}
+received jsonrpc response in 9ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m12 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"103","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"103","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"103","holdDuration":0}
+received jsonrpc response in 7ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m11 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"103","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"103","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"103","holdDuration":0}
+received jsonrpc response in 8ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m9 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"106","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"106","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"106","holdDuration":0}
+received jsonrpc response in 5ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m7 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"106","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"106","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"106","holdDuration":0}
+received jsonrpc response in 5ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m8 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"106","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"106","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"106","holdDuration":0}
+received jsonrpc response in 7ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m9 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"106","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"106","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"106","holdDuration":0}
+received jsonrpc response in 6ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m9 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"106","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"106","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"106","holdDuration":0}
+received jsonrpc response in 6ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m7 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"105","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"105","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"105","holdDuration":0}
+received jsonrpc response in 8ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m11 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"105","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"105","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"105","holdDuration":0}
+received jsonrpc response in 13ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m15 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"105","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"105","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"105","holdDuration":0}
+received jsonrpc response in 5ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m7 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"105","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"105","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"105","holdDuration":0}
+received jsonrpc response in 4ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m6 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"105","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"105","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"105","holdDuration":0}
+received jsonrpc response in 15ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m18 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"108","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"108","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"108","holdDuration":0}
+received jsonrpc response in 11ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m13 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"108","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"108","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"108","holdDuration":0}
+received jsonrpc response in 8ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m11 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"108","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"108","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"108","holdDuration":0}
+received jsonrpc response in 9ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m13 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"108","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"108","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"108","holdDuration":0}
+received jsonrpc response in 5ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m6 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"108","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"108","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"108","holdDuration":0}
+received jsonrpc response in 5ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m7 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"103","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"103","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"103","holdDuration":0}
+received jsonrpc response in 4ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m6 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"103","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"103","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"103","holdDuration":0}
+received jsonrpc response in 11ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m13 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"103","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"103","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"103","holdDuration":0}
+received jsonrpc response in 6ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m7 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"103","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"103","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"103","holdDuration":0}
+received jsonrpc response in 12ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m16 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"103","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"103","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"103","holdDuration":0}
+received jsonrpc response in 5ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m8 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"106","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"106","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"106","holdDuration":0}
+received jsonrpc response in 8ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m11 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"106","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"106","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"106","holdDuration":0}
+received jsonrpc response in 7ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m8 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"106","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"106","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"106","holdDuration":0}
+received jsonrpc response in 6ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m8 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"106","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"106","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"106","holdDuration":0}
+received jsonrpc response in 6ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m7 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"106","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"106","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"106","holdDuration":0}
+received jsonrpc response in 6ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m8 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"105","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"105","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"105","holdDuration":0}
+received jsonrpc response in 4ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m6 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"105","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"105","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"105","holdDuration":0}
+received jsonrpc response in 4ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m6 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"105","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"105","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"105","holdDuration":0}
+received jsonrpc response in 4ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m5 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"105","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"105","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"105","holdDuration":0}
+received jsonrpc response in 5ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m8 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"105","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"105","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"105","holdDuration":0}
+received jsonrpc response in 6ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m7 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"108","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"108","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"108","holdDuration":0}
+received jsonrpc response in 8ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m10 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"108","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"108","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"108","holdDuration":0}
+received jsonrpc response in 4ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m6 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"108","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"108","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"108","holdDuration":0}
+received jsonrpc response in 6ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m8 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"108","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"108","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"108","holdDuration":0}
+received jsonrpc response in 6ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m8 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"108","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"108","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"108","holdDuration":0}
+received jsonrpc response in 7ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m9 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"103","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"103","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"103","holdDuration":0}
+received jsonrpc response in 5ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m7 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"103","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"103","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"103","holdDuration":0}
+received jsonrpc response in 6ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m8 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"103","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"103","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"103","holdDuration":0}
+received jsonrpc response in 9ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m12 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"103","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"103","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"103","holdDuration":0}
+received jsonrpc response in 5ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m7 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"103","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"103","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"103","holdDuration":0}
+received jsonrpc response in 4ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m5 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"106","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"106","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"106","holdDuration":0}
+received jsonrpc response in 6ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m9 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"106","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"106","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"106","holdDuration":0}
+received jsonrpc response in 6ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m8 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"106","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"106","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"106","holdDuration":0}
+received jsonrpc response in 8ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m10 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"106","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"106","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"106","holdDuration":0}
+received jsonrpc response in 16ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m17 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"106","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"106","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"106","holdDuration":0}
+received jsonrpc response in 6ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m7 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"105","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"105","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"105","holdDuration":0}
+received jsonrpc response in 4ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m7 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"105","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"105","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"105","holdDuration":0}
+received jsonrpc response in 7ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m8 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"105","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"105","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"105","holdDuration":0}
+received jsonrpc response in 9ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m12 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"105","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"105","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"105","holdDuration":0}
+received jsonrpc response in 5ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m7 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"105","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"105","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"105","holdDuration":0}
+received jsonrpc response in 9ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m10 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"108","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"108","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"108","holdDuration":0}
+received jsonrpc response in 6ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m8 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"108","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"108","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"108","holdDuration":0}
+received jsonrpc response in 9ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m10 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"108","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"108","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"108","holdDuration":0}
+received jsonrpc response in 5ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m7 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"108","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"108","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"108","holdDuration":0}
+received jsonrpc response in 6ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m8 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"108","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"108","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '108', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"108","holdDuration":0}
+received jsonrpc response in 23ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m25 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"103","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"103","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"103","holdDuration":0}
+received jsonrpc response in 6ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m8 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"103","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"103","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"103","holdDuration":0}
+received jsonrpc response in 10ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m12 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"103","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"103","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"103","holdDuration":0}
+received jsonrpc response in 8ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m10 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"103","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"103","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"103","holdDuration":0}
+received jsonrpc response in 6ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m7 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"103","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"103","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '103', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"103","holdDuration":0}
+received jsonrpc response in 4ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m5 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"106","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"106","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"106","holdDuration":0}
+received jsonrpc response in 7ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m9 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"106","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"106","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"106","holdDuration":0}
+received jsonrpc response in 6ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m8 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"106","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"106","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"106","holdDuration":0}
+received jsonrpc response in 8ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m9 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"106","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"106","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"106","holdDuration":0}
+received jsonrpc response in 9ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m11 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"106","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"106","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '106', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"106","holdDuration":0}
+received jsonrpc response in 5ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m8 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"105","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"105","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"105","holdDuration":0}
+received jsonrpc response in 10ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m12 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"105","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"105","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"105","holdDuration":0}
+received jsonrpc response in 7ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m9 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"105","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"105","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"105","holdDuration":0}
+received jsonrpc response in 9ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m12 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"105","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"105","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"105","holdDuration":0}
+received jsonrpc response in 5ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m7 ms - 50[39m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync[39m [90m{"script":"jsonrpc: injectInputKeyEvent","args":[[{"inputKeyEvent":"105","holdDuration":0}]]}[39m
+[38;5;48m[KeplerDriver@d9ab][0m Calling AppiumDriver.execute() with args: ["jsonrpc: injectInputKeyEvent",[[{"inputKeyEvent":"105","holdDuration":0}]],"cb2ffa80-af86-4371-b70a-28327f45d13b"]
+Running /executeScript with script=execute, args=[
+  'jsonrpc: injectInputKeyEvent',
+  [
+    [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+    [length]: 1
+  ],
+  'cb2ffa80-af86-4371-b70a-28327f45d13b',
+  [length]: 3
+]
+Running /executeScript with script=jsonrpc: injectInputKeyEvent, args=[
+  [ { inputKeyEvent: '105', holdDuration: 0 }, [length]: 1 ],
+  [length]: 1
+]
+Executing JSON RPC method: 'jsonrpc: injectInputKeyEvent'
+Sending jsonRPC POST http://127.0.0.1:15575/jsonrpc id=0, method=injectInputKeyEvent, params object={"inputKeyEvent":"105","holdDuration":0}
+received jsonrpc response in 12ms (http 200 OK): {"id":"0","jsonrpc":"2.0","result":true} 
+[38;5;48m[KeplerDriver@d9ab][0m Responding to client with driver.execute() result: {"id":"0","jsonrpc":"2.0","result":true}
+[38;5;0m[HTTP][0m [37m<-- POST /session/cb2ffa80-af86-4371-b70a-28327f45d13b/execute/sync [39m[32m200[39m [90m15 ms - 50[39m [90m[39m

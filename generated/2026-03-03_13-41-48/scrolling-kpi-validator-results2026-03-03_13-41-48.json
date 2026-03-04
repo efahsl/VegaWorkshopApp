@@ -1,0 +1,99 @@
+[
+    {
+        "operation": "!=",
+        "assert_if": null,
+        "calculation": "P100",
+        "expressions": [
+            {
+                "operation": "!=",
+                "metadata": {
+                    "input_kpi": {
+                        "name": "3+ Consecutive Dropped Frames",
+                        "value": -1
+                    },
+                    "output_kpi": {
+                        "name": "3+ Consecutive Dropped Frames",
+                        "value": 146
+                    }
+                },
+                "function": null,
+                "result": true
+            },
+            {
+                "operation": "!=",
+                "metadata": {
+                    "input_kpi": {
+                        "name": "5+ Consecutive Delayed Events - Focus",
+                        "value": -1
+                    },
+                    "output_kpi": {
+                        "name": "5+ Consecutive Delayed Events - Focus",
+                        "value": 0
+                    }
+                },
+                "function": null,
+                "result": true
+            },
+            {
+                "operation": "!=",
+                "metadata": {
+                    "input_kpi": {
+                        "name": "5+ Consecutive Dropped Frames",
+                        "value": -1
+                    },
+                    "output_kpi": {
+                        "name": "5+ Consecutive Dropped Frames",
+                        "value": 74
+                    }
+                },
+                "function": null,
+                "result": true
+            },
+            {
+                "operation": "!=",
+                "metadata": {
+                    "input_kpi": {
+                        "name": "App Event Response Time - Focus",
+                        "value": -1
+                    },
+                    "output_kpi": {
+                        "name": "App Event Response Time - Focus",
+                        "value": 1.0
+                    }
+                },
+                "function": null,
+                "result": true
+            },
+            {
+                "operation": "!=",
+                "metadata": {
+                    "input_kpi": {
+                        "name": "Fluidity %",
+                        "value": -1
+                    },
+                    "output_kpi": {
+                        "name": "Fluidity %",
+                        "value": 81.6
+                    }
+                },
+                "function": null,
+                "result": true
+            },
+            {
+                "operation": "!=",
+                "metadata": {
+                    "input_kpi": {
+                        "name": "Granular Fluidity %",
+                        "value": -1
+                    },
+                    "output_kpi": {
+                        "name": "Granular Fluidity %",
+                        "value": 0.0
+                    }
+                },
+                "function": null,
+                "result": true
+            }
+        ]
+    }
+]
